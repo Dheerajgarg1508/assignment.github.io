@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <audio id="hoverSound" src="sounds/button-hover.mp3" preload="auto"></audio>
+    
+    <main class="main-main"> 
+        <header class="header-main"> 
+            <h1>See-n-Say-Storymaker Online</h1>
+        </header>
+
+        <div class="image-div"> 
+            <div>
+                <h1>Your favourite children's toy now online!</h1>
+            </div>
+            <img src="./images/storyboard-imagie.png" alt="Image with word bank"> 
+        </div>
+
+        <div class="btn-div"> 
+            <h3>Click these buttons to get your words!</h3>
+            <div class="speach-text">
+                <pre id="finalWordPrint"></pre>
+                <pre id="randomWordPrint"></pre>
+                <pre id="randomWordPrint"></pre>
+            </div>
+            <form>
+                <button class="rounded-button-1" type="button" onclick="buttonOne()">Nouns</button>
+                <button class="rounded-button-2" type="button" onclick="buttonTwo()">Verbs</button>
+                <button class="rounded-button-3" type="button" onclick="buttonThree()">Adjectives</button>
+                <button class="rounded-button-4" type="button" onclick="buttonFour()"> Other Nouns</button>
+                <button class="rounded-button-5" type="button" onclick="buttonFive()">Places</button>
+
+                <button class="rounded-button-01" type="button" onclick="buttonSpeach()">Speak</button>
+                <button class="rounded-button-02" type="button" onclick="buttonRandom()">Random</button>
+                <button class="rounded-button-03" type="button" onclick="buttonClear()">Clear</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer"> 
+        <h3>See-n-Say Storymaker Assignment 1 </h3>
+    </footer>
+    <script src="js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
